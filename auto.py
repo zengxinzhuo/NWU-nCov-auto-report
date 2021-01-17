@@ -210,13 +210,13 @@ def sent_report(cookies):
     headers = {"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded","X-Requested-With":"XMLHttpRequest"}
     # cookies = {"UUkey":"","eai-sess":""}
     params = {
-        "sfzx":"1", #是否在校
+        "sfzx":"0", #是否在校
         "tw":"1",   #体温（list）(0-"Below 36";1-"36-36.5";2-"36.5-36.9";3-"36.9-37.3"; ... , i<=8)
-        "area":"陕西省 西安市 长安区",
+        "area":"陕西省 西安市 雁塔区",
         "city":"西安市",
         "province":"陕西省",
-        "address":"陕西省西安市长安区郭杜街道西北大学南校区学生公寓10号楼西北大学长安校区",
-        "geo_api_info":'{"type":"complete","info":"SUCCESS","status":1,"$Da":"jsonp_687452_","position":{"Q":34.14218,"R":108.87518999999998,"lng":108.87519,"lat":34.14218},"message":"Get ipLocation success.Get address success.","location_type":"ip","accuracy":null,"isConverted":true,"addressComponent":{"citycode":"029","adcode":"610116","businessAreas":[],"neighborhoodType":"","neighborhood":"","building":"","buildingType":"","street":"文苑南路","streetNumber":"11号","country":"中国","province":"陕西省","city":"西安市","district":"长安区","township":"郭杜街道"},"formattedAddress":"陕西省西安市长安区郭杜街道西北大学南校区学生公寓10号楼西北大学长安校区","roads":[],"crosses":[],"pois":[]}',   #高德SDK返回值
+        "address":"陕西省西安市雁塔区电子城街道电子西街融侨馨苑",
+        "geo_api_info":'{"type":"complete","info":"SUCCESS","status":1,"$Da":"jsonp_687452_","position":{"Q":34.14218,"R":108.87518999999998,"lng":108.87519,"lat":34.14218},"message":"Get ipLocation success.Get address success.","location_type":"ip","accuracy":null,"isConverted":true,"addressComponent":{"citycode":"029","adcode":"610116","businessAreas":[],"neighborhoodType":"","neighborhood":"","building":"","buildingType":"","street":"电子西街","streetNumber":"2号","country":"中国","province":"陕西省","city":"西安市","district":"雁塔区","township":"电子城街道"},"formattedAddress":"陕西省西安市雁塔区电子城街道电子西街融侨馨苑","roads":[],"crosses":[],"pois":[]}',   #高德SDK返回值
         "sfcyglq":"0",  #是否隔离期
         "sfyzz":"0",    #是否有症状
         "qtqk":"",  #其他情况
